@@ -40,11 +40,8 @@ st.title("Mutual Fund Analyzer")
 selected_fund = st.selectbox("Mutual Fund Name", mutual_funds)
 
 # Date selector with default as current date
-selected_date = st.date_input("Select Date", datetime.now(), min_value=datetime(1990, 1, 1))
+selected_date = st.date_input("Select Date", datetime.now(), min_value=datetime(1990, 1, 1), format="DD-MM-YYYY")
 
-# Button to set the date to the current date
-if st.button("Set Current Date"):
-    selected_date = datetime.now()
 
 # Submit button
 if st.button("Submit"):
