@@ -16,7 +16,7 @@ def getLink(selected_fund,data):
 
     for e in data:
         if selected_fund == e['schemeName']:
-            link = f'https://api.mfapi.in/mf/{e['schemeCode']}'
+            link = f'https://api.mfapi.in/mf/{e["schemeCode"]}'
 
     return link
 
